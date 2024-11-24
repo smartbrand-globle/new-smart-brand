@@ -1,0 +1,77 @@
+:root {
+  bg-color: linear-gradient(to right, #021953, #1a308b, #0d2761);
+}
+
+header {
+  margin: 5rem 0;
+  padding: 5rem 20px;
+  text-align: center;
+  color: #fffff3;
+  background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+}
+
+h1 {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    /* width: 75%; */
+
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+}
+
+.main-btn {
+  padding: 0.75rem 3rem;
+  border-radius: 1rem;
+  color: #fffff3;
+  display: block;
+  background-color: #01d1f530;
+  font-size: 1.3rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  overflow: hidden;
+}
+
+.main-btn span {
+  position: relative;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.main-btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  height: 100%;
+  width: 0%;
+  background-color: #fffff3;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.main-btn:hover::before {
+  width: 100%;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.main-btn:hover span {
+  color: #051b5a;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
