@@ -43,7 +43,7 @@ header h3 {
 }
 
 footer {
-  background-color: #1a1d1f;
+  background: linear-gradient(to right, #021953, #1a308b, #0d2761);
   color: white;
   border-top: 3px solid var(--secondary-color);
 }
@@ -58,7 +58,7 @@ footer {
 }
 
 .collab .footer-logo {
-  width: 150px;
+  width: 250px;
   margin-bottom: 1rem;
 }
 
@@ -73,7 +73,8 @@ footer {
 }
 .collab .icons a {
   color: var(--accepted-white);
-  background: var(--main-gradient);
+  background: #07d2f0;
+
   /* border: 2px solid var(--secondary-color); */
   border-radius: 50%;
   padding: 20px;
@@ -99,7 +100,7 @@ footer {
 
 .links i {
   font-size: 10px;
-  color: var(--secondary-color);
+  color: #07d2f0;
   margin-right: 11px;
 }
 
@@ -150,7 +151,7 @@ footer {
   color: #c8c8c8;
 }
 .bottom-footer {
-  background-color: #1a1d1f;
+  background: linear-gradient(to right, #021953, #1a308b, #0d2761);
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -253,7 +254,7 @@ footer {
 }
 
 .lets-talk-details i {
-  color: var(--secondary-color);
+  color: #07d2f0;
   font-size: 23px;
   margin-right: 15px;
 }

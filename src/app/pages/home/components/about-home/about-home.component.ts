@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CountUpModule } from 'ngx-countup';
+
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-about-home',
   standalone: true,
-  imports: [CountUpModule, CommonModule],
+  imports: [CommonModule, CountUpModule],
   templateUrl: './about-home.component.html',
   styleUrl: './about-home.component.css',
 })
