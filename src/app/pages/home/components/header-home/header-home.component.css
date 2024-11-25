@@ -41,8 +41,14 @@ p {
     font-size: 1.3rem;
     margin: 1rem 0;
   }
+  .svgImage {
+    position: absolute;
+    left: 0;
+    width: 111px !important;
+  }
 }
 
 .bg-image-dots {
   left: 0;
+  width: 111px !important;
 }

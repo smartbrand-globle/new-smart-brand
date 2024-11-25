@@ -93,7 +93,7 @@ a {
   margin-right: 10px;
 }
 .navbar-brand {
-  position: sticky;
+  /* position: sticky; */
   top: 7px;
   left: 20px;
   z-index: 1000;

@@ -9,6 +9,7 @@ header {
   color: #fffff3;
   background: linear-gradient(to right, #021953, #1a308b, #0d2761);
   position: relative;
+  height: 70vh;
 }
 
 h1 {
