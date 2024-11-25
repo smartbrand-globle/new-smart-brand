@@ -32,7 +32,7 @@ export class NavbarComponent {
   @ViewChild('header') header!: ElementRef;
 
   constructor() {}
-  @Input() bgColor = '';
+  // @Input() bgColor = '';
   // ngOnInit(): void {}
 
   // toggleNavbarBg() {

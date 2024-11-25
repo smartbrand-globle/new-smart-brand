@@ -1,4 +1,4 @@
-<header [ngClass]="bgColor" class="header" #header>
+<header class="header" #header>
   <div class="parentHeader">
     <a class="navbar-brand contain-logo" routerLink="">
       <ng-container *ngIf="showToggle">
@@ -26,7 +26,6 @@
         <!--  -->
         <div class="contain-btn">
           <button
-            #btn
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
