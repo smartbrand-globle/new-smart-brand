@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './get-in-touch.component.html',
-  styleUrl: './get-in-touch.component.css'
+  styleUrl: './get-in-touch.component.css',
 })
-export class GetInTouchComponent {
-
-}
+export class GetInTouchComponent {}

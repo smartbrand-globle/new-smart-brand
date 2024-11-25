@@ -1,15 +1,8 @@
-/* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #0a1638 0%, #020a20 100%);
-  color: #ffffff;
-} */
 
 .container {
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 40px 20px;
   text-align: center;
-  /* border: solid; */
 }
 
 h1 {
@@ -21,7 +14,6 @@ h1 {
 .pos-icon,
 .pos-icon3 {
   position: relative;
-  /* border: solid; */
 }
 .pos-icon img {
   position: absolute;

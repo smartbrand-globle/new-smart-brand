@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 
-body {
+/* body {
   font-family: Arial, sans-serif;
   background: linear-gradient(180deg, #0a1638 0%, #020a20 100%);
   color: #ffffff;
-}
+} */
 
 /* Contact Section */
 .contact-section {
@@ -23,17 +24,20 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 33px;
   overflow: hidden;
   color: #000;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
-  width: 49%;
+  width: 63%;
   padding: 40px;
 }
-
+.header-in-tuch {
+  width: 80%;
+  margin: auto;
+}
 .contact-form h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -52,6 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 80%;
+  margin: auto;
 }
 
 .contact-form input,
@@ -64,11 +70,39 @@ body {
 }
 
 .contact-form button {
-  background-color: #1e90ff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+
+  width: 100%;
+  height: 50px;
+
+  /* 222 */
+  background: linear-gradient(
+    90.23deg,
+    #021953 0.18%,
+    #1a308b 47.54%,
+    #0d2761 89.83%
+  );
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  margin: auto;
 }
 
 .contact-form button:hover {
@@ -89,7 +123,7 @@ body {
 .contact-info span {
   font-weight: bold;
   display: block;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .contact-info p {
@@ -98,21 +132,45 @@ body {
 }
 
 .contact-map {
-  width: 49%;
+  width: 35%;
   gap: 15px;
   overflow: hidden;
+  margin-left: auto;
+  padding: 20px;
 }
 .contact-map iframe {
   gap: 15px;
-  height: 100% !important;
-}
-
-/* .contact-map img {
+  height: 90% !important;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
+  margin-top: 5%;
+  display: inline-block;
+}
+@media (max-width: 1020px) {
+  .contact-map {
+    width: 100%;
+    gap: 15px;
+    overflow: hidden;
+    margin-left: auto;
+    padding: 20px;
+  }
+  .contact-map iframe {
+    gap: 15px;
+    height: 97% !important;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 40px;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin: auto;
+  }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
