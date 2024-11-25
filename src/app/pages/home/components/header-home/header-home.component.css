@@ -8,9 +8,17 @@ header {
   text-align: center;
   color: #fffff3;
   background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+
+  position: relative;
+
+  /* border: solid white; */
   position: relative;
 }
-
+.svgImage {
+  position: absolute;
+  left: 0;
+  /* bottom: 0;  */
+}
 h1 {
   width: 75%;
   margin: 0 auto;
