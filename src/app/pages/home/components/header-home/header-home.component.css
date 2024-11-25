@@ -8,8 +8,14 @@ header {
   text-align: center;
   color: #fffff3;
   background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+  /* border: solid white; */
+  position: relative;
 }
-
+.svgImage {
+  position: absolute;
+  left: 0;
+  /* bottom: 0;  */
+}
 h1 {
   width: 75%;
   margin: 0 auto;
@@ -75,3 +81,5 @@ p {
   color: #051b5a;
   transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
+
+/* //================================================ */
