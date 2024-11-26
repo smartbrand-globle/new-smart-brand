@@ -27,6 +27,12 @@ section {
   text-decoration: none;
   color: #fffff3;
   height: 100%;
+  transition: 0.3s;
+}
+
+.service:hover {
+  background: linear-gradient(145deg, #0078ff, #005fcc);
+  box-shadow: inset -5px -5px 10px #0052b3, inset 5px 5px 10px #0052b3;
 }
 
 .service.one,
@@ -35,9 +41,10 @@ section {
 }
 
 .img-service {
-  box-shadow: 2px 2px 15px 15px rgba(10, 210, 243, 0.4),
-    -2px -2px 15px 15px rgba(10, 210, 243, 0.4);
-  border-radius: 1rem;
+  /* box-shadow: 2px 2px 15px 15px rgba(10, 210, 243, 0.4),
+    -2px -2px 15px 15px rgba(10, 210, 243, 0.4); */
+  /* border-radius: 2rem; */
+  width: 80px;
 }
 
 .service h6 {

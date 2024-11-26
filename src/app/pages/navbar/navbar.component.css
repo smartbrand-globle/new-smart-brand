@@ -13,8 +13,31 @@
 .btn {
   border: 2px white solid;
   border-radius: 1rem;
-  color: white !important;
   width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+.btn span {
+  color: #fffff3;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  position: relative;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--acceptable-white, #fffff3);
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn:hover span {
+  color: #021953;
+}
+.btn:hover::before {
+  width: 100%;
 }
 
 .nav-item {
@@ -151,7 +174,7 @@ a {
   align-items: center;
   color: #fff;
   text-transform: uppercase;
-  width: 195px;
+  width: 190px;
 }
 
 .navbar-toggler-icon {

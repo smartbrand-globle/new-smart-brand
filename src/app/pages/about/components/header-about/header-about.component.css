@@ -3,13 +3,13 @@
 }
 
 header {
-  margin: 5rem 0;
-  padding: 5rem 20px;
+  margin: 5rem 0 0;
+  padding: 0rem 20px;
   text-align: center;
   color: #fffff3;
   background: linear-gradient(to right, #021953, #1a308b, #0d2761);
   position: relative;
-  height: 70vh;
+  height: 40vh;
 }
 
 h1 {

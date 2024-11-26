@@ -1,15 +1,23 @@
-.container {
+section {
   margin: 5rem auto;
+  position: relative;
+}
+.container {
   padding: 40px 20px;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #ffffff;
+.bg-image-dots:nth-child(1) {
+  left: 0;
 }
+.bg-image-dots:nth-child(2) {
+  right: 0;
+  transform: rotate(180deg);
+}
+
 .pos-icon,
 .pos-icon3 {
   position: relative;
@@ -69,7 +77,8 @@ h1 {
     flex-direction: column-reverse;
   }
   .step-number {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    width: 100%;
   }
 
   .step-content h2 {
@@ -83,12 +92,7 @@ h1 {
     text-align: left;
     width: 100%;
   }
-  .step-number {
-    font-size: 10rem;
-    font-weight: bold;
-    color: #ffffff;
-    width: 100%;
-  }
+
   .pos-icon img {
     left: -10%;
     width: 111px;

@@ -13,6 +13,7 @@ header {
 
   /* border: solid white; */
   position: relative;
+  /* height: 40vh; */
 }
 .svgImage {
   position: absolute;
@@ -29,7 +30,10 @@ p {
   font-size: 1.5rem;
   margin: 2rem 0;
 }
-
+.bg-image-dots {
+  left: 0;
+  width: 111px !important;
+}
 @media (max-width: 768px) {
   h1 {
     /* width: 75%; */
@@ -46,9 +50,4 @@ p {
     left: 0;
     width: 111px !important;
   }
-}
-
-.bg-image-dots {
-  left: 0;
-  width: 111px !important;
 }

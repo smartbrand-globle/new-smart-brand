@@ -74,8 +74,25 @@ section {
   translate: 0 -50%;
   width: 9rem;
   opacity: 0.2;
+  z-index: -2;
 }
 
-body {
-  background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+/*  */
+
+.main-address {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #fffff0;
+  letter-spacing: 3px;
 }
+
+@media (max-width: 768px) {
+  .main-address {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+}
+
+/*  */
