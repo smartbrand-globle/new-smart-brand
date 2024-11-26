@@ -93,7 +93,7 @@ a {
   margin-right: 10px;
 }
 .navbar-brand {
-  /* position: sticky; */
+  position: sticky;
   top: 7px;
   left: 20px;
   z-index: 1000;
@@ -168,10 +168,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navbar-nav .nav-link:hover {
-  /* color: var(--black); */
 }
 
 .navbar-nav .nav-link .hoverlinks {
@@ -263,10 +259,6 @@ a {
     width: 140px !important;
   }
 }
-
-/* @media screen and (min-width: 992px) and (max-width: 1199px) {
-
-} */
 
 @media screen and (max-width: 993px) {
   .dropdown-menu {
