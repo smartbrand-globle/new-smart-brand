@@ -170,7 +170,12 @@
           </li>
 
           <li class="nav-item nav-link-hover results">
-            <a class="nav-link results" style="cursor: pointer">
+            <a
+              class="nav-link results"
+              style="cursor: pointer"
+              routerLink="services"
+              routerLinkActive="active"
+            >
               <i class="fa-brands fa-servicestack iconNavBar results"></i>
               <span class="me-1 results"> Services </span>
               <i class="fa-solid fa-angle-down results iconNavBar"></i>
@@ -178,28 +183,39 @@
 
             <ul class="dropdown-menu">
               <li>
-                <a routerLink="web-development"
+                <a routerLink="/web"
                   ><i class="fa-solid fa-display iconNavBar"></i> WEB
                   Development
                 </a>
               </li>
               <li>
-                <a routerLink="app-development">
+                <a routerLink="/app">
                   <i class="fa-solid fa-mobile-screen-button iconNavBar"></i>APP
                   Development</a
                 >
               </li>
               <li>
-                <a routerLink="ui-ux-design"
+                <a routerLink="/ui-ux"
                   ><i class="fa-brands fa-figma iconNavBar"></i>UI/UX Design</a
                 >
               </li>
               <li>
-                <a routerLink="google-ads"
+                <a routerLink="/seo"
                   ><i class="fa-brands fa-google iconNavBar"></i>Seo Services</a
                 >
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link nav-link1"
+              routerLink="about"
+              routerLinkActive="active"
+            >
+              <div class="hoverlinks"></div>
+              <i class="fa-solid fa-briefcase iconNavBar"></i>
+              Careers
+            </a>
           </li>
         </ul>
         <ul>

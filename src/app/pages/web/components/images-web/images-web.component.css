@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.col-12 {
+  margin-bottom: 64px;
+}
+
+.image {
+  text-align: center;
+  border: 2px solid #fffff3;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .col-12 {
+    margin-bottom: 32px;
+  }
+}
