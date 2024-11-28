@@ -1,0 +1,21 @@
+<section>
+  <div class="container">
+    <div class="title-parent">
+      <span></span> &nbsp; &nbsp;
+      <h2>OUR PROJECTS</h2>
+      &nbsp; &nbsp;
+      <span></span>
+    </div>
+
+    <div class="row">
+      @for (img of images; track $index) {
+      <div class="col-12">
+        <div class="image">
+          <img class="w-100" [src]="img.src" alt="image" />
+        </div>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>

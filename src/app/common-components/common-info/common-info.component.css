@@ -1,0 +1,33 @@
+section {
+  margin: 0 0 10rem;
+  color: #fffff3;
+  position: relative;
+  /* height: 40vh; */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.bg-image-dots:nth-child(1) {
+  left: 0;
+}
+.bg-image-dots:nth-child(2) {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

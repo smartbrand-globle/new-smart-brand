@@ -1,0 +1,55 @@
+header {
+  margin: 5rem 0 0;
+  padding: 0rem 20px;
+  text-align: center;
+  color: #fffff3;
+  position: relative;
+  height: 40vh;
+}
+
+h1 {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 3rem;
+  transform: translateY(-4rem);
+  opacity: 0;
+  animation: toBottom 1.1s ease-in-out forwards;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+h1:hover {
+  letter-spacing: 5px;
+}
+
+@keyframes toBottom {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.bg-image-dots:nth-child(1) {
+  left: 0;
+}
+.bg-image-dots:nth-child(2) {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    /* width: 75%; */
+
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+}

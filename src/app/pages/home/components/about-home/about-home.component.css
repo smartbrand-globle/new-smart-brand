@@ -10,6 +10,15 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+  position: relative;
+}
+
+.bg-image-dots:nth-child(1) {
+  left: 0;
+}
+.bg-image-dots:nth-child(2) {
+  right: 0;
+  transform: rotate(180deg);
 }
 
 .about-content {

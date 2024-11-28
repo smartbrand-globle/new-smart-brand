@@ -74,8 +74,51 @@ section {
   translate: 0 -50%;
   width: 9rem;
   opacity: 0.2;
+  /* z-index: -2; */
 }
 
-body {
-  background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+/*  */
+
+.main-address {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #fffff0;
+  letter-spacing: 3px;
 }
+
+@media (max-width: 768px) {
+  .main-address {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+}
+
+/*  */
+/*  */
+.title-parent {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  text-align: center;
+}
+.title-parent span {
+  height: 1px;
+  width: 30%;
+  background-color: #fffff0;
+}
+.title-parent h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fffff0;
+  z-index: 2;
+}
+@media (max-width: 991px) {
+  .title-parent h2 {
+    font-size: 20px;
+  }
+}
+/*  */

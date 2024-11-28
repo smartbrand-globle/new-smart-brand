@@ -9,6 +9,7 @@ header {
   color: #fffff3;
   background: linear-gradient(to right, #021953, #1a308b, #0d2761);
   position: relative;
+  /* height: 40vh; */
 }
 .svgImage {
   position: absolute;
@@ -24,7 +25,10 @@ p {
   font-size: 1.5rem;
   margin: 2rem 0;
 }
-
+.bg-image-dots {
+  left: 0;
+  width: 111px !important;
+}
 @media (max-width: 768px) {
   h1 {
     /* width: 75%; */
@@ -43,7 +47,7 @@ p {
   }
 }
 
-/* .bg-image-dots {
+.bg-image-dots {
   left: 0;
   width: 111px !important;
-} */
+}

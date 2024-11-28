@@ -32,6 +32,9 @@ section {
 }
 
 @media (max-width: 991px) {
+  .text-container {
+    order: -1;
+  }
   .text span {
     color: #07d2f0;
   }

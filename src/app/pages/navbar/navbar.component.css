@@ -13,8 +13,31 @@
 .btn {
   border: 2px white solid;
   border-radius: 1rem;
-  color: white !important;
   width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+.btn span {
+  color: #fffff3;
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  position: relative;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--acceptable-white, #fffff3);
+  transition: 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn:hover span {
+  color: #021953;
+}
+.btn:hover::before {
+  width: 100%;
 }
 
 .nav-item {
@@ -136,8 +159,11 @@ a {
     padding: 0 10px;
     align-items: flex-start;
   }
-  .navbar-nav {
-    background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+  .btn {
+    padding: 6px 16px;
+  }
+  .btn span {
+    font-size: 14px;
   }
 }
 
@@ -155,7 +181,7 @@ a {
   align-items: center;
   color: #fff;
   text-transform: uppercase;
-  width: 200px;
+  width: 190px;
 }
 
 .navbar-toggler-icon {
@@ -164,7 +190,6 @@ a {
 }
 
 .navbar-nav .nav-link {
-  /* color: var(--black); */
   text-transform: uppercase;
   padding: 1rem 10px;
   text-align: center;
@@ -174,23 +199,19 @@ a {
   justify-content: center;
 }
 
-.navbar-nav .nav-link:hover {
-  /* color: var(--black); */
-}
-
 .navbar-nav .nav-link .hoverlinks {
   position: absolute;
   width: 0%;
-  height: 3px;
-  background-color: var(--light-blue);
+  height: 2px;
+  border-radius: 1rem;
+  background-color: #fffff3;
   bottom: 0;
   transition: all 0.3s ease;
 }
 .navbar-nav .nav-link:hover .hoverlinks {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: var(--accepted-white);
+  width: 80%;
+  margin: auto;
+
   bottom: 10px;
   transition: all 0.3s ease;
 }
@@ -267,10 +288,6 @@ a {
     width: 100%;
   }
 }
-
-/* @media screen and (min-width: 992px) and (max-width: 1199px) {
-
-} */
 
 @media screen and (max-width: 993px) {
   .dropdown-menu {

@@ -21,15 +21,34 @@ import { NgClass, NgIf } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavbarComponent {
+export class NavbarComponent implements AfterViewInit {
   showToggle: boolean = true;
   private _Renderer2 = inject(Renderer2);
   @ViewChild('btn') btn!: ElementRef;
-  @ViewChild('btnSpan') btnSpan!: ElementRef;
   @ViewChild('list') list!: ElementRef;
+  @ViewChild('services') services!: ElementRef;
+  @ViewChild('btnSpan') btnSpan!: ElementRef;
   @ViewChild('navbar') navbar!: ElementRef;
   @ViewChild('logo') logo!: ElementRef;
   @ViewChild('header') header!: ElementRef;
+
+  ngAfterViewInit(): void {
+    this.closeListAfterClicking();
+  }
+
+  closeListAfterClicking() {
+    this.navbar.nativeElement.addEventListener('click', (e: any) => {
+      if (!e.target == e.target.classList.contains('results')) {
+        this._Renderer2.addClass(this.btn.nativeElement, 'collapsed');
+        this._Renderer2.setAttribute(
+          this.btn.nativeElement,
+          'aria-expanded',
+          'false'
+        );
+        this._Renderer2.removeClass(this.list.nativeElement, 'show');
+      }
+    });
+  }
 
   constructor() {}
   // @Input() bgColor = '';
