@@ -3,18 +3,13 @@ section {
   position: relative;
 }
 
-.row {
-  width: 80%;
-  /* background-color: red; */
-  margin: auto;
-}
-
 .innerDiv {
   border: 2px solid #fffff3;
   color: #fffff3;
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
+  height: 100%;
 }
 
 .innerDiv h2 {
