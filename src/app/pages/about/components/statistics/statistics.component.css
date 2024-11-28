@@ -3,15 +3,12 @@ section {
   position: relative;
 }
 
-<<<<<<< HEAD
 .row {
   width: 100%;
   /* background-color: red; */
   margin: auto;
 }
 
-=======
->>>>>>> acc37b410aa8d3e0aacf5e5d3916a05f45841526
 .innerDiv {
   border: 2px solid #fffff3;
   color: #fffff3;
