@@ -378,6 +378,13 @@ a {
   .dropdown-menu {
     left: -4rem;
   }
+
+  header {
+    padding: 0 8px !important;
+  }
+  .navbar-brand {
+    width: 130px;
+  }
 }
 
 @media screen and (max-width: 576px) {

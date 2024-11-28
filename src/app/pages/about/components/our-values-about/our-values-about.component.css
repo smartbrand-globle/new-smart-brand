@@ -56,4 +56,17 @@ section {
   .image img {
     width: 90%;
   }
+
+
+}
+@media (max-width: 512px) {
+  .innerDiv {
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
 }

@@ -205,4 +205,15 @@
     right: -3%;
     width: 111px;
   }
+  .contact-section {
+    padding: 40px 5px;
+    position: relative;
+  }
+  .header-in-tuch {
+    width: 96%;
+  }
+  .contact-form form {
+    gap: 15px;
+    width: 96%;
+  }
 }
