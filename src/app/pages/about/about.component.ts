@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderAboutComponent } from './components/header-about/header-about.component';
 import { WhoAreAboutComponent } from './components/who-are-about/who-are-about.component';
 import { WhatDoAboutComponent } from './components/what-do-about/what-do-about.component';
@@ -20,4 +20,8 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {}
+export class AboutComponent implements OnInit {
+  ngOnInit(): void {
+    scrollTo(0, 0);
+  }
+}
