@@ -6,6 +6,7 @@ import { WebComponent } from './pages/web/web.component';
 import { MobileComponent } from './pages/mobile/mobile.component';
 import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
 import { SeoComponent } from './pages/seo/seo.component';
+import { CareersComponent } from './pages/careers/careers.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,4 +17,5 @@ export const routes: Routes = [
   { path: 'app', component: MobileComponent },
   { path: 'ui-ux', component: UiUxComponent },
   { path: 'seo', component: SeoComponent },
+  { path: 'careers', component: CareersComponent },
 ];
