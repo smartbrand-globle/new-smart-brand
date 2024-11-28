@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: solid; */
+}
+
 section {
   color: #fffff3;
   position: relative;
@@ -56,8 +63,6 @@ section {
   .image img {
     width: 90%;
   }
-
-
 }
 @media (max-width: 512px) {
   .innerDiv {
@@ -68,5 +73,4 @@ section {
     justify-content: space-between;
     padding: 0 5px;
   }
-
 }
