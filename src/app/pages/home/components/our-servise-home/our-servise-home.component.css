@@ -58,6 +58,7 @@ body {
   width: 100%;
   height: 287px;
   border: solid 1px #fff;
+  text-decoration: none;
 }
 
 /* Hover effect for service box */

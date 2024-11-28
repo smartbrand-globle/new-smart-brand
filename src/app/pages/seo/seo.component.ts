@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonHeaderComponent } from '../../common-components/common-header/common-header.component';
 import { CommonInfoComponent } from '../../common-components/common-info/common-info.component';
 import { ImagesSeoComponent } from './components/images-seo/images-seo.component';
@@ -10,4 +10,8 @@ import { ImagesSeoComponent } from './components/images-seo/images-seo.component
   templateUrl: './seo.component.html',
   styleUrl: './seo.component.css',
 })
-export class SeoComponent {}
+export class SeoComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+}

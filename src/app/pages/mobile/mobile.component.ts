@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ImagesMobileComponent } from './components/images-mobile/images-mobile.component';
 import { CommonHeaderComponent } from '../../common-components/common-header/common-header.component';
 import { CommonInfoComponent } from '../../common-components/common-info/common-info.component';
@@ -10,4 +10,8 @@ import { CommonInfoComponent } from '../../common-components/common-info/common-
   templateUrl: './mobile.component.html',
   styleUrl: './mobile.component.css',
 })
-export class MobileComponent {}
+export class MobileComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+}

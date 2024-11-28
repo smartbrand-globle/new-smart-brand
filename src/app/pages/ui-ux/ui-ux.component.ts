@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ImagesUiUxComponent } from './components/images-ui-ux/images-ui-ux.component';
 import { CommonHeaderComponent } from '../../common-components/common-header/common-header.component';
 import { CommonInfoComponent } from '../../common-components/common-info/common-info.component';
@@ -10,4 +10,8 @@ import { CommonInfoComponent } from '../../common-components/common-info/common-
   templateUrl: './ui-ux.component.html',
   styleUrl: './ui-ux.component.css',
 })
-export class UiUxComponent {}
+export class UiUxComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+}
