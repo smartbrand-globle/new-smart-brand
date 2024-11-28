@@ -30,6 +30,7 @@
   z-index: 1000;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) !important;
   background: transparent;
+  padding: 0 20px;
 }
 .header.transparent {
   background: linear-gradient(
@@ -135,12 +136,15 @@ a {
     padding: 0 10px;
     align-items: flex-start;
   }
+  .navbar-nav {
+    background: linear-gradient(to right, #021953, #1a308b, #0d2761);
+  }
 }
 
 .navbar {
   transition: background-color 0.3s;
   /* width: 80%; */
-  padding: 1rem 0;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -151,7 +155,7 @@ a {
   align-items: center;
   color: #fff;
   text-transform: uppercase;
-  width: 220px;
+  width: 200px;
 }
 
 .navbar-toggler-icon {
@@ -260,7 +264,7 @@ a {
     padding: 8px 10px;
   }
   .logo {
-    width: 140px !important;
+    width: 100%;
   }
 }
 
