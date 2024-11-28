@@ -122,12 +122,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  gap: 1rem;
+  width: 80%;
+  margin: 3rem auto;
 }
 
-.contact-info div {
+/* .contact-info div {
   flex: 1 1 30%;
-}
+} */
 
 .contact-info span {
   font-weight: bold;
@@ -138,6 +141,7 @@
 .contact-info p {
   margin: 0;
   color: #555;
+  white-space: nowrap;
 }
 
 .contact-map {

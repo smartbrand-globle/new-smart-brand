@@ -102,6 +102,9 @@ footer {
   transition: 0.3s;
 }
 
+.links {
+  margin: auto;
+}
 .links li {
   margin-top: 15px;
 }
@@ -254,6 +257,12 @@ footer {
   align-items: center;
 }
 
+@media (max-width: 1199px) {
+  .links {
+    margin: unset;
+  }
+}
+
 @media (max-width: 850px) {
   .lets-talk-details span {
     font-size: 13px;
@@ -278,6 +287,12 @@ footer {
   .bottom-footer {
     flex-direction: column-reverse;
     gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .last-part-of-footer {
+    margin: auto !important;
   }
 }
 
@@ -307,7 +322,7 @@ footer {
 }
 @media (max-width: 400px) {
   .parent-in-top {
-    padding: 0.3rem !important;
+    padding: 20px !important;
   }
 }
 ul,
