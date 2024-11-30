@@ -154,18 +154,6 @@ a {
 
   /* background-color: green; */
 }
-@media (max-width: 992px) {
-  .parentHeader {
-    padding: 0 10px;
-    align-items: flex-start;
-  }
-  .btn {
-    padding: 6px 16px;
-  }
-  .btn span {
-    font-size: 14px;
-  }
-}
 
 .navbar {
   transition: background-color 0.3s;
@@ -295,7 +283,18 @@ a {
     left: -22rem;
   }
 }
-
+@media (max-width: 992px) {
+  .parentHeader {
+    padding: 0 10px;
+    align-items: flex-start;
+  }
+  .btn {
+    padding: 6px 16px;
+  }
+  .btn span {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 950px) {
   .dropdown-menu {
     top: 2rem;

@@ -129,3 +129,11 @@ section {
     width: 111px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .process-step {
+    margin: 10px 0;
+
+    gap: 15px;
+  }
+}

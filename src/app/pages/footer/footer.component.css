@@ -324,6 +324,16 @@ footer {
   .parent-in-top {
     padding: 20px !important;
   }
+  .bottom-footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: fit-content;
+  }
+  .collab .footer-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
 }
 ul,
 .col-md-4 {
