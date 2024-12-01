@@ -3,8 +3,8 @@
 }
 
 header {
-  margin: 5rem 0;
-  padding: 5rem 20px;
+  margin: 5rem 0 5rem;
+  padding: 0rem 20px;
   text-align: center;
   color: #fffff3;
   background: linear-gradient(to right, #021953, #1a308b, #0d2761);
@@ -16,7 +16,7 @@ header {
   left: 0;
 }
 h1 {
-  width: 75%;
+  /* width: 75%; */
   margin: 0 auto;
   font-size: 3rem;
 }
@@ -24,6 +24,10 @@ h1 {
 p {
   font-size: 1.5rem;
   margin: 2rem 0;
+}
+.bg-image-dots {
+  left: 0;
+  width: 111px !important;
 }
 .bg-image-dots {
   left: 0;
@@ -47,7 +51,8 @@ p {
   }
 }
 
-.bg-image-dots {
-  left: 0;
-  width: 111px !important;
+@media (max-width: 425px) {
+  header {
+    margin: 2rem 0 5rem;
+  }
 }

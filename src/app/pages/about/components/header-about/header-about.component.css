@@ -42,3 +42,8 @@ p {
     margin: 1rem 0;
   }
 }
+@media (max-width: 425px) {
+  header {
+    margin: 2rem 0 0rem;
+  }
+}

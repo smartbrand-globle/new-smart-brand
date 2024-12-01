@@ -13,7 +13,7 @@ body {
 /* Main container for services */
 .services-container {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 5rem auto;
   position: relative;
 }
@@ -76,7 +76,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 15px;
+  /* margin: 0 auto 15px; */
+  margin: 0 auto;
 }
 
 .icon img {
@@ -92,7 +93,7 @@ body {
 .service-title {
   font-size: 1.6rem;
   font-weight: bold;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   color: #fff;
 }
 

@@ -18,17 +18,92 @@
           molestie vel, ornare non id blandit netus.
         </p>
       </div>
-      <form>
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="tel" placeholder="Phone number*" required />
-        <select required>
+      <form [formGroup]="touchForm" (ngSubmit)="submitTouchFrom()">
+        <!-- <div class="form-item"> -->
+        <input formControlName="name" type="text" placeholder="Name" required />
+
+        <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
+          <span
+            *ngIf="myForm.get('name')?.getError('required')"
+            class="error-message"
+            >Name is required</span
+          >
+          <span
+            *ngIf="myForm.get('name')?.getError('minlength')"
+            class="error-message"
+            >The minimun length of Name is 3</span
+          >
+          <span
+            *ngIf="myForm.get('name')?.getError('maxlength')"
+            class="error-message"
+            >The max length of Name is 15</span
+          >
+        </div>
+        <!-- </div> -->
+        <input
+          formControlName="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <div
+          *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched"
+        >
+          <span
+            *ngIf="myForm.get('email')?.getError('required')"
+            class="error-message"
+            >Email is required</span
+          >
+          <span
+            *ngIf="myForm.get('email')?.getError('email')"
+            class="error-message"
+            >Email pattern is wrong</span
+          >
+        </div>
+        <!--  -->
+        <input
+          formControlName="phoneNumber"
+          type="tel"
+          placeholder="Phone number*"
+          required
+        />
+        <div
+          *ngIf="
+            myForm.get('phoneNumber')?.invalid &&
+            myForm.get('phoneNumber')?.touched
+          "
+        >
+          <span
+            *ngIf="myForm.get('phoneNumber')?.getError('required')"
+            class="error-message"
+            >Phone Number is required</span
+          >
+          <span
+            *ngIf="myForm.get('phoneNumber')?.getError('pattern')"
+            class="error-message"
+            >Phone Number pattern is wrong</span
+          >
+        </div>
+        <!--  -->
+        <select formControlName="category" required>
           <option value="" disabled selected>How did you find us?</option>
           <option value="google">Google</option>
           <option value="social-media">Social Media</option>
           <option value="referral">Referral</option>
         </select>
-        <button type="submit">SEND</button>
+        <div
+          *ngIf="
+            myForm.get('category')?.invalid && myForm.get('category')?.touched
+          "
+        >
+          <span
+            *ngIf="myForm.get('category')?.getError('required')"
+            class="error-message"
+            >You must choose from the list
+          </span>
+        </div>
+        <!--  -->
+        <button type="submit" [disabled]="touchForm.invalid">SEND</button>
       </form>
       <div class="contact-info">
         <div class="d-flex align-items-center gap-2">

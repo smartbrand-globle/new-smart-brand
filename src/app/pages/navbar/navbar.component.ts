@@ -21,7 +21,7 @@ import { NgClass, NgIf } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavbarComponent implements AfterViewInit {
+export class NavbarComponent implements AfterViewInit, OnInit {
   showToggle: boolean = true;
   private _Renderer2 = inject(Renderer2);
   @ViewChild('btn') btn!: ElementRef;
@@ -31,6 +31,8 @@ export class NavbarComponent implements AfterViewInit {
   @ViewChild('navbar') navbar!: ElementRef;
   @ViewChild('logo') logo!: ElementRef;
   @ViewChild('header') header!: ElementRef;
+
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     this.closeListAfterClicking();
@@ -50,7 +52,6 @@ export class NavbarComponent implements AfterViewInit {
     });
   }
 
-  constructor() {}
   // @Input() bgColor = '';
   // ngOnInit(): void {}
 

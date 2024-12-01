@@ -313,6 +313,9 @@ a {
   .dropdown-menu {
     left: -18rem;
   }
+  .btn {
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 860px) {
