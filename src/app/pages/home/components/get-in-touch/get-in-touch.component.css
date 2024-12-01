@@ -114,8 +114,9 @@
   flex-grow: 0;
   margin: auto;
 }
-.contact-form button:disabled {
-  background-color: rgb(26, 48, 139, 0.6);
+.contact-form button:disabled,
+.contact-form button:disabled:hover {
+  background: rgb(26, 48, 139, 0.6);
   cursor: auto;
 }
 .contact-form button:hover {
