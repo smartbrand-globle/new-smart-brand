@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --global user.name "smartbrand-globle"
           git config --global user.email "waleeddreamtoyz@gmail.com"
-          git checkout -b new-build-branch  # Create and switch to a new branch
+          git checkout -b master  # Create and switch to a new branch
 
       - name: Add and commit build files
         run: |
