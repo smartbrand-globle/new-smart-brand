@@ -36,6 +36,8 @@ jobs:
           git commit -m "Add build files"
 
       - name: Push build files to the new branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the secret token here
         run: |
-          git remote set-url origin https://x-access-token:${{ SHA256:IyPHkz6T7Bh4aS3STpeoxT4ch0vVwo6JgRJ17L6o7Fs }}@github.com/smartbrand-globle/new-smart-brand.git
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/smartbrand-globle/new-smart-brand.git
           git push origin new-build-branch
