@@ -34,3 +34,4 @@ jobs:
           script: |
             rm -rf /home/username/public_html/myproject/*
             cp -r ./dist/* /home/username/public_html/myproject/
+          debug: true
