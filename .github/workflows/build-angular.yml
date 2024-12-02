@@ -21,5 +21,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build 
+      - name: Build
         run: npm run build
+
+      - name: Create a new branch for build files
+        run: |
+          git config --global user.name "smartbrand-globle"
+          git config --global user.email "waleeddreamtoyz@gmail.com"
+          git checkout -b new-build-branch  # Create and switch to a new branch
+
+      - name: Add and commit build files
+        run: |
+          git add dist/  # Add the build output directory (adjust if needed)
+          git commit -m "Add build files" || echo "No changes to commit"
+
+      - name: Push build files to the new branch
+        run: |
+          git push origin new-build-branch  # Push the new branch with build files
