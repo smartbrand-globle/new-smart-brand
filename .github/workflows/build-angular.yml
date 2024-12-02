@@ -33,8 +33,8 @@ jobs:
       - name: Add and commit build files
         run: |
           git add dist/  # Add the build output directory (adjust if needed)
-          git commit -m "Add build files" || echo "No changes to commit"
+          git commit -m "Add build files" 
 
       - name: Push build files to the new branch
         run: |
-          git push origin new-build-branch  # Push the new branch with build files
+          git push origin master  # Push the new branch with build files
