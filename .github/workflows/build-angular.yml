@@ -32,7 +32,7 @@ jobs:
 
       - name: Add and commit build files
         run: |
-          git add dist/  # Add the build output directory (adjust if needed)
+          git add -f dist/  # Add the build output directory (adjust if needed)
           git commit -m "Add build files" 
 
       - name: Push build files to the new branch
