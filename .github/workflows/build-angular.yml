@@ -3,7 +3,7 @@ name: Build Angular App
 on:
   push:
     branches:
-      - main  # Ensure this matches your default branch, like master or others
+      - main
 
 jobs:
   build-angular:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x  # Choose the Node.js version you are using
+          node-version: 18.x
 
       - name: Install dependencies
         run: npm install
@@ -28,13 +28,14 @@ jobs:
         run: |
           git config --global user.name "smartbrand-globle"
           git config --global user.email "waleeddreamtoyz@gmail.com"
-          git checkout -b master  # Create and switch to a new branch
+          git checkout -b new-build-branch
 
       - name: Add and commit build files
         run: |
-          git add -f dist/  # Add the build output directory (adjust if needed)
-          git commit -m "Add build files" 
+          git add -f dist/
+          git commit -m "Add build files"
 
       - name: Push build files to the new branch
         run: |
-          git push origin master  # Push the new branch with build files 
+          git remote set-url origin https://x-access-token:${{ SHA256:IyPHkz6T7Bh4aS3STpeoxT4ch0vVwo6JgRJ17L6o7Fs }}@github.com/smartbrand-globle/new-smart-brand.git
+          git push origin new-build-branch
