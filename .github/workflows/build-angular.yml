@@ -24,12 +24,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Hostinger via SSH
+      - name: Deploy to server
         uses: appleboy/ssh-action@v0.1.0
         with:
-          host:  89.116.192.51 
-          username: u543591097
-          key: ssh -p 65002 u543591097@89.116.192.51 
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
             rm -rf /home/username/public_html/myproject/*
