@@ -196,12 +196,8 @@ a {
   bottom: 0;
   transition: all 0.3s ease;
 }
-.navbar-nav .nav-link:hover .hoverlinks {
-  width: 80%;
-  margin: auto;
-
-  bottom: 10px;
-  transition: all 0.3s ease;
+.navbar-nav .nav-link:hover {
+  color: #0090ff !important;
 }
 .lang-select {
   background-color: #000;
@@ -245,7 +241,7 @@ a {
 }
 
 .dropdown-menu li a:hover {
-  color: var(--secondary-color) !important;
+  /* color: red; */
   margin-left: 10px;
   transition: all 0.3s ease;
   background-color: var(--accepted-white);
