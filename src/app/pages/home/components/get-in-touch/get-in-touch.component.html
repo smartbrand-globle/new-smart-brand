@@ -20,7 +20,12 @@
       </div>
       <form [formGroup]="touchForm" (ngSubmit)="submitTouchFrom()">
         <!-- <div class="form-item"> -->
-        <input formControlName="name" type="text" placeholder="Name" required />
+        <input
+          formControlName="name"
+          type="text"
+          placeholder="Name *"
+          required
+        />
 
         <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
           <span
@@ -64,7 +69,7 @@
         <input
           formControlName="phoneNumber"
           type="tel"
-          placeholder="Phone number*"
+          placeholder="Phone number *"
           required
         />
         <div
@@ -107,21 +112,33 @@
       </form>
       <div class="contact-info">
         <div class="d-flex align-items-center gap-2">
-          <span style="color: blue; font-size: 1.6rem">📞 </span>
+          <!-- <span style="color: blue; font-size: 1.6rem">📞 </span> -->
+          <img
+            src="../../../../../assets/imgs/get-in-touch/phone.webp"
+            alt="image"
+          />
           <div>
             <span>PHONE</span>
             <p>05 5342 1234</p>
           </div>
         </div>
         <div class="d-flex align-items-center gap-2">
-          <span style="font-size: 1.6rem">📠 </span>
+          <!-- <span style="font-size: 1.6rem">📠 </span> -->
+          <img
+            src="../../../../../assets/imgs/get-in-touch/fax.webp"
+            alt="image"
+          />
           <div>
             <span>FAX</span>
             <p>05 5342 1234</p>
           </div>
         </div>
         <div class="d-flex align-items-center gap-2">
-          <span style="font-size: 1.6rem">📧 </span>
+          <!-- <span style="font-size: 1.6rem">📧 </span> -->
+          <img
+            src="../../../../../assets/imgs/get-in-touch/envelope.webp"
+            alt="image"
+          />
           <div>
             <span>EMAIL</span>
             <p>"info%imcore.com.au"</p>

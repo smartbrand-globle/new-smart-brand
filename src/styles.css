@@ -122,3 +122,29 @@ section {
   }
 }
 /*  */
+.more-button {
+  display: inline-block;
+  margin-top: 20px;
+
+  background: #016bf530;
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+  padding: 10px 60px;
+
+  border-radius: 16px;
+}
+
+.more-button:hover {
+  background: #215bc7;
+}
+
+@media (max-width: 768px) {
+  .more-button {
+    padding: 8px 32px;
+    font-size: 0.9rem;
+  }
+}
+
+/*  */

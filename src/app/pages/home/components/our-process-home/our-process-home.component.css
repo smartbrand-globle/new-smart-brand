@@ -65,6 +65,7 @@ section {
   font-size: 1rem;
   line-height: 1.6;
   color: #cfcfcf;
+  width: 77%;
 }
 @media (max-width: 1024px) {
   .pos-icon3 img {
@@ -127,6 +128,9 @@ section {
     position: absolute;
     right: -3%;
     width: 111px;
+  }
+  .step-content p {
+    width: 100%;
   }
 }
 

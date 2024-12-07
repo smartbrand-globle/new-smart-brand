@@ -4,17 +4,28 @@ section {
   width: 100%;
 }
 
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .text h2 {
   margin: 0 0 2rem;
   font-weight: 700;
 }
 
 .text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 36px;
   margin-bottom: 1rem;
+  padding-right: 2rem;
 }
-
+.services {
+  padding: 0 5rem;
+}
 .service {
   padding: 1.5rem 0.5rem 0.5rem;
   border: 2px solid #fffff3;
@@ -45,18 +56,27 @@ section {
   /* box-shadow: 2px 2px 15px 15px rgba(10, 210, 243, 0.4),
     -2px -2px 15px 15px rgba(10, 210, 243, 0.4); */
   /* border-radius: 2rem; */
-  width: 80px;
+  width: 70px;
 }
 
 .service h6 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 .bg-image-dots {
   left: 0;
 }
-
+@media (max-width: 1400px) {
+  .services {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .services {
+    padding: 0 0rem;
+  }
+}
 @media (max-width: 991px) {
   .text h2 {
     margin: 0 0 1.2rem;

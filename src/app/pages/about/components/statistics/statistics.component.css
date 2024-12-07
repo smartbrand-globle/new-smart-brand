@@ -1,11 +1,12 @@
 section {
   margin: 0 0 5rem 0;
   position: relative;
-  padding: 0 0px;
+  padding: 5rem 0rem;
+  background-color: #092064;
 }
 
 .row {
-  width: 100%;
+  width: 75%;
   margin: auto;
 }
 
@@ -19,12 +20,15 @@ section {
 }
 
 .innerDiv h2 {
-  font-size: 3rem;
-  font-weight: bolder;
+  font-size: 40px;
+  font-weight: 700;
   margin: 1rem 0 0rem;
+  line-height: 38px;
+  color: #f1f1f1;
 }
 .innerDiv p {
-  font-size: 1.5rem;
+  font-size: 20px;
+  color: #f1f1f1;
   font-weight: bold;
 }
 
@@ -44,5 +48,11 @@ section {
   }
   .innerDiv p {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .row {
+    width: 100%;
   }
 }

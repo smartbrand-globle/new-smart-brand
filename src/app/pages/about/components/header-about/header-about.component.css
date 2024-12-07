@@ -11,7 +11,7 @@ header {
   height: 40vh;
 }
 
-h1 {
+/* h1 {
   width: 75%;
   margin: 0 auto;
   font-size: 3rem;
@@ -20,6 +20,21 @@ h1 {
 p {
   font-size: 1.5rem;
   margin: 2rem 0;
+} */
+
+h1 {
+  /* width: 75%; */
+  margin: 0 auto;
+  font-size: 5rem;
+  width: 77%;
+}
+
+p {
+  font-size: 2.4rem;
+  /* margin: 2rem auto; */
+  width: 77%;
+  margin: 20px auto 2rem;
+  line-height: 1;
 }
 
 .bg-image-dots:nth-child(1) {
@@ -39,11 +54,15 @@ p {
 
   p {
     font-size: 1.3rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
   }
 }
 @media (max-width: 425px) {
   header {
     margin: 2rem 0 0rem;
+  }
+  h1,
+  p {
+    width: 100%;
   }
 }
