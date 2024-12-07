@@ -18,12 +18,15 @@ header {
 h1 {
   /* width: 75%; */
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 5rem;
+  width: 77%;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   margin: 2rem 0;
+  width: 77%;
+  margin: 20px auto;
 }
 .bg-image-dots {
   left: 0;
